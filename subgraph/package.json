@@ -1,0 +1,15 @@
+{
+  "name": "capv3",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ abood/v3",
+    "create-local": "graph create --node http://localhost:8020/ abood/v3",
+    "remove-local": "graph remove --node http://localhost:8020/ abood/v3",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 abood/v3"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-ts": "0.31.0"
+  }
+}

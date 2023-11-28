@@ -1,0 +1,26 @@
+specVersion: 0.0.4
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: Trading
+    network: klaytn-testnet
+    source:
+      abi: Trading
+      address: "0x24c23a634dC1dD033Dc2B2063bc689BD35BE610f"
+      startBlock: 139533351
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.6
+      language: wasm/assemblyscript
+      entities:
+        - Trading
+      abis:
+        - name: Trading
+          file: ./abis/Trading.json
+      eventHandlers:
+        - event: PositionUpdated(indexed bytes32,indexed address,indexed bytes32,address,bool,uint256,uint256,uint256,uint256)
+          handler: handlePositionUpdated
+        - event: ClosePosition(indexed bytes32,indexed address,indexed bytes32,address,bool,uint256,uint256,uint256,uint256,int256,bool)
+          handler: handleClosePosition
+      file: ./src/trading.ts
