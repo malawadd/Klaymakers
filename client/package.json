@@ -1,7 +1,7 @@
 {
   "name": "client-v3",
   "version": "1.0.0",
-  "description": "Cap client UI v3",
+  "description": "Abood client UI v3",
   "main": "index.js",
   "scripts": {
     "build": "rollup -c",
@@ -9,16 +9,6 @@
     "start": "sirv build --single",
     "deploy-ipfs": "npm run build && npx ipfs-deploy build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/0xcap/client-v3.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/0xcap/client-v3/issues"
-  },
-  "homepage": "https://github.com/0xcap/client-v3#readme",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.0.6",
