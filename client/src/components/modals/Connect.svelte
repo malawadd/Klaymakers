@@ -46,7 +46,7 @@
 	<div class='note'><strong>Important Note:</strong><br/> have fun</div>
 
 	<div class='row' on:click={() => {connectMetamask()}} data-intercept="true">
-		<img src='https://raw.githubusercontent.com/MetaMask/brand-resources/master/SVG/metamask-fox.svg'>
+		<img src='https://raw.githubusercontent.com/MetaMask/brand-resources/master/SVG/SVG_MetaMask_Icon_Color.svg'>
 		<div>MetaMask</div>
 	</div>
 
